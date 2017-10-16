@@ -11,7 +11,7 @@
               $dados = file("dados/professores.csv");
               
           
-                   foreach ($dados as $linha) {
+                   foreach ($dados as $posicao => $linha) {
                    	$colunas = explode(",", $linha);
           	
           	              if ($colunas[0] == $codigo) {
@@ -33,22 +33,22 @@
             	$dados = file("dados/professores.csv");
               
           
-                   foreach ($dados as $linha) {
-                   	$colunas = explode(",", $linha);
-                       $professor = array();
-                       $professor['siape'] = $colunas[0];
-          	           $professor['nome'] = $colunas[1];
-          	           $professor['email'] = $colunas[2];
-          	           $professor['foto'] = $colunas[3];
+                   foreach ($dados as $posicao => $linha) {
+
+                   	   if( $posicao != 0) {
+              
+                   	         $colunas = explode(",", $linha);
+                             $professor = array();
+                             $professor['siape'] = $colunas[0];
+          	                 $professor['nome'] = $colunas[1];
+          	                 $professor['email'] = $colunas[2];
+          	                 $professor['foto'] = $colunas[3];
+
           	           
-                   	$professores[] = $colunas;
+                   	            $professores[] = $professor;
+                   	    }
           	        }
 
 
             	return $professores;
                     }
-
-
-            //texte
-            $lista = listaProfessores();
-             print_r($lista);
