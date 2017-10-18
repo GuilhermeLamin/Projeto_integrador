@@ -6,13 +6,18 @@
 
    $siape = $_GET['cod'];
 
-   $professor = buscaProfessor($siape);
   ?>
+  
   <div class="detalhes-professor">
-
-  	<img src="<?=professor['foto']?>">
-  	<p>"<?=professor['foto']?>">
-  	<p>email</p>>
+	<img src="<?=$professor['foto']?>">
+  	<p><?=$professor['foto']?></p>
+  	<p><?=$professor['email']?></p>
   </div>	
+
+
 <?php
+
    include("rodape.php");
+
+
+?>
