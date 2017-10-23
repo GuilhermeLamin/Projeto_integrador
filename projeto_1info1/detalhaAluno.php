@@ -10,11 +10,16 @@ if($matricula!=''){ // se nao tiver valor no siape
    $aluno = buscaAluno($matricula);
   ?>
   
-  <div class="detalhes-aluno">
-	<img src="<?=$aluno['foto']?>">
-  	<p><?=$aluno['foto']?></p>
-  	<p><?=$aluno['email']?></p>
-  </div>	
+  <article class="coluna80">
+    <section class="foto">
+      <img src="<?=$aluno['foto']?>">
+    </section>
+
+    <section class="dados">
+      <p>Nome: <?=$aluno['nome']?></p>
+      <p>Email: <?=$aluno['email']?></p>
+    </section>
+  </article>
 
 
 <?php

@@ -1,5 +1,3 @@
+	<div class="coluna10">Pão com alface</div>
 </body>
-
-    <section>Instituto Federal Catarinense - Campus Araquari</section>
-    
 </html>

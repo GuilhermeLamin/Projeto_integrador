@@ -6,13 +6,22 @@
 
    $siape = $_GET['cod'];
 
+   $professor=buscaProfessor($siape);
   ?>
-  
-  <div class="detalhes-professor">
-	<img src="<?=$professor['foto']?>">
-  	<p><?=$professor['foto']?></p>
-  	<p><?=$professor['email']?></p>
-  </div>	
+  <!-- conteudo principal -->
+  <article class="coluna80">
+    <section class="foto">
+      <img src="<?=$professor['foto']?>">
+    </section>
+
+    <section class="dados">
+      <p>Nome: <?=$professor['nome']?></p>
+      <p>Email: <?=$professor['email']?></p>
+      <p>Disciplinas: Fundamento de Informática</p>
+      <p>Sala: B7</p>
+
+    </section>
+  </article>
 
 
 <?php

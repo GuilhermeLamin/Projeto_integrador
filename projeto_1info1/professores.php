@@ -39,7 +39,7 @@
               
                    	         $colunas = explode(",", $linha);
                              $professor = array();
-                             $professor['matricula'] = $colunas[0];
+                             $professor['siape'] = $colunas[0];
           	                 $professor['nome'] = $colunas[1];
           	                 $professor['email'] = $colunas[2];
           	                 $professor['foto'] = $colunas[3];

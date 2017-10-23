@@ -3,6 +3,13 @@
      include("cabecalho.php");
      include("alunos.php");
 
+?>
+  <!-- conteudo principal -->
+  <article class="coluna80">
+    <section class="lista">
+    <ul>
+<?php
+
 
         $lista = listaAlunos();
 
@@ -11,18 +18,18 @@
     	
 ?>
 
+   	      <li><a href="detalhaAluno.php?cod=<?=$aluno['matricula'] ?>" ><?=$aluno['nome'] ?> </a></li>
 
-     <div class="lista-aluno">
-   	
-   	    <img src="<?=$aluno['foto'] ?>">
-
-   	      <h2><a href="detalhaAluno.php?cod=<?=$aluno['matricula'] ?>" ><?=$aluno['nome'] ?> </a></h2>
-
-    </div>
 
 <?php
-     }
+    }
+?>
 
+    </ul>
+  </section>
+  </article>
+
+<?php
     include("rodape.php");
 
 ?>
