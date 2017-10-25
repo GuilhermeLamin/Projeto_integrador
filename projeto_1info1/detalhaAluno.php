@@ -18,6 +18,7 @@ if($matricula!=''){ // se nao tiver valor no siape
     <section class="dados">
       <p>Nome: <?=$aluno['nome']?></p>
       <p>Email: <?=$aluno['email']?></p>
+      <p>Turma: <?=$aluno['turma']?></p>
     </section>
   </article>
 

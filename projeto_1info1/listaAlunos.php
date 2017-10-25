@@ -11,7 +11,7 @@
 <?php
 
 
-        $lista = listaAlunos();
+        $lista = listaAlunosTurma('1info1');
 
 
         foreach ($lista as $aluno) {
