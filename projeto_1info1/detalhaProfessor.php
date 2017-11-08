@@ -1,6 +1,5 @@
 <?php
 
-
    include("cabecalho.php");
    include("professores.php");
 
@@ -23,10 +22,8 @@
     </section>
   </article>
 
-
 <?php
 
    include("rodape.php");
-
 
 ?>

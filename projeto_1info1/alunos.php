@@ -42,7 +42,6 @@
                                              $aluno['nome'] = $colunas[1];
                                              $aluno['turma'] = $colunas[2];
                                              $aluno['email'] = $colunas[3];
-                                             $aluno['foto'] = $colunas[4];
 
                        
                                 $alunos[] = $aluno;
