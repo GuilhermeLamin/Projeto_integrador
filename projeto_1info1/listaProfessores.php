@@ -22,6 +22,16 @@
 ?>
 
     </ul>
+
+<?php
+//isset - is set - está definida?
+if(isset($_SESSION['login'])){
+?>  
+   <a href="formProfessor.php">Inserir professor</a>
+<?php
+}
+?>
+
   </section>
   </article>
 
