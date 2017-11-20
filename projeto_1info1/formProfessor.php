@@ -8,7 +8,7 @@
 //isset - is set - está definida?
 if(isset($_SESSION['login'])){
 ?>     
-        <form method="post" action="insereProfessor.php">
+        <form method="post" action="insereProfessor.php" enctype="multipart/form-data">
      	<h3>Informações do novo professor</h3>
         <br>
      	<label for="siape">SIAPE:</label>
@@ -18,17 +18,18 @@ if(isset($_SESSION['login'])){
      	 <input type="text" name="nome" class="espaco_input">
         <br>
      	<label for="E-mail">E-mail:</label>
-     	 <input type="text" name="E-mail" class="espaco_input">
+     	 <input type="email" name="email" class="espaco_input">
         <br>
      	<label for="foto">Foto:</label>
-     	 <input type="text" name="foto" class="espaco_input">
+     	 <input type="file" name="foto" class="espaco_input">
      	<br>
 
        <input type="submit" value="Cadastrar professor">
        </form>
 <?php
 }else{
-  echo("acesso negado");
+  echo("Acesso negado");
+  echo('<meta http-equiv="refresh"content=0;url=listaProfessores.php>');
 }
 ?>
      </article>

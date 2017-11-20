@@ -1,25 +1,32 @@
 <?php
-	
+	print_r($_POST);
 
+  $origem = $_FILES['foto']['tmp_name'];
 
- 	$nome= $_POST ['siape'];
- 	$telefone = $_POST ['nome'];
+  $destino = "imagens/professores/".$_FILES['foto']['name'];
+  
+    move_uploaded_file($origem, $destino);
+
+/*
+ 	$siape= $_POST ['siape'];
+ 	$nome = $_POST ['nome'];
  	$email = $_POST ['email'];
  	$foto = $_POST ['foto'];
 
- 	$linha = $siape.",".$nome.",".$email.",".$foto;
- 	print($linha);
+ 	$linha = "\n".$siape.",".$nome.",".$email.",".$foto;
 	
-	//ABRIR O ARQUIVO EM MODOD DE ESCRITA 
+	
 	$arquivo = fopen("dados/professores.csv", "a+");
 
-	//ESCREVER O TESTO NO ARQUIVO
-	fwrite($arquivo, "\n.$linha");
+	
+	fwrite($arquivo, $linha);
 
-	//FECHAR O ARQUIVO, PARA SALVÁ-LO
+	
 	fclose($arquivo);
 
+echo('<meta http-equiv="refresh"content=0;url=listaProfessores.php>');
 
-	}
 
 ?>
+
+*/

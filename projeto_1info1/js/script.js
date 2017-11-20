@@ -4,7 +4,7 @@ $(document).ready(function(){
 		var id;
 		id = $(this).attr('id');
 		$("."+id).removeClass('escondido');
-		$(".tab").removeClass('ativo');
+		$(".tab").addClass('ativo');
 		$("#"+id).addClass('ativo');			
 	})
 })

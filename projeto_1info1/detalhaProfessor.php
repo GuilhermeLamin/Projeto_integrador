@@ -16,8 +16,8 @@
     <section class="dados">
       <p>Nome: <?=$professor['nome']?></p>
       <p>Email: <?=$professor['email']?></p>
-      <p>Disciplinas: Fundamento de Informática</p>
-      <p>Sala: B7</p>
+      <p>Disciplina: Not found</p>
+      <p>Sala: Not found</p>
 
     </section>
   </article>

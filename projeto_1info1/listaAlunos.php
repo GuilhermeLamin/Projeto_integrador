@@ -7,12 +7,12 @@
   <!-- conteudo principal -->
   <article class="coluna80">
     <section class="lista">
-      <h2>1info1</h2>
+      <h2>1INFO1</h2>
     <ul>
 <?php
 
 
-        $lista = listaAlunosTurma('1info1');
+        $lista = listaAlunosTurma('1INFO1');
 
 
         foreach ($lista as $aluno) {
@@ -31,12 +31,12 @@
 
 
 <section class="lista">
-      <h2>1info2</h2>
+      <h2>1INFO2</h2>
     <ul>
 <?php
 
 
-        $lista = listaAlunosTurma('1info2');
+        $lista = listaAlunosTurma('1INFO2');
 
 
         foreach ($lista as $aluno) {
@@ -53,12 +53,12 @@
     </ul>
   </section>
   <section class="lista">
-      <h2>1info3</h2>
+      <h2>INFO3</h2>
     <ul>
 <?php
 
 
-        $lista = listaAlunosTurma('1info3');
+        $lista = listaAlunosTurma('1INFO3');
 
 
         foreach ($lista as $aluno) {
