@@ -1,17 +1,21 @@
 <?php
 	print_r($_POST);
 
+	print_r($_FILES);
+
   $origem = $_FILES['foto']['tmp_name'];
 
-  $destino = "imagens/professores/".$_FILES['foto']['name'];
+  $data = date('dmYHis');
+
+  $destino = "imagens/professores/".$data.$_FILES['foto']['name'];
   
     move_uploaded_file($origem, $destino);
 
-/*
- 	$siape= $_POST ['siape'];
- 	$nome = $_POST ['nome'];
- 	$email = $_POST ['email'];
- 	$foto = $_POST ['foto'];
+
+ 	$siape= $_POST['siape'];
+ 	$nome = $_POST['nome'];
+ 	$email = $_POST['email'];
+ 	$foto = $destino;
 
  	$linha = "\n".$siape.",".$nome.",".$email.",".$foto;
 	
@@ -28,5 +32,3 @@ echo('<meta http-equiv="refresh"content=0;url=listaProfessores.php>');
 
 
 ?>
-
-*/

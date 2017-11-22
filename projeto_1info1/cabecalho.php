@@ -5,8 +5,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/completo.css">
 	<title>Todos professores</title>
 	<meta charset="utf-8">

@@ -12,14 +12,14 @@
 <?php
 
 
-        $lista = listaAlunosTurma('1INFO1');
+        $lista = listaAlunosTurma('1info1');
 
 
         foreach ($lista as $aluno) {
     	
 ?>
 
-   	      <li><a href="detalhaAluno.php?cod=<?=$aluno['matricula'] ?>" ><?=$aluno['nome'] ?> </a></li>
+   	      <li><a href="detalhaAluno.php?cod=<?=$aluno['matricula'] ?>"><?=$aluno['nome'] ?> </a></li>
 
 
 <?php
@@ -36,7 +36,7 @@
 <?php
 
 
-        $lista = listaAlunosTurma('1INFO2');
+        $lista = listaAlunosTurma('1info2');
 
 
         foreach ($lista as $aluno) {
@@ -53,12 +53,12 @@
     </ul>
   </section>
   <section class="lista">
-      <h2>INFO3</h2>
+      <h2>1INFO3</h2>
     <ul>
 <?php
 
 
-        $lista = listaAlunosTurma('1INFO3');
+        $lista = listaAlunosTurma('1info3');
 
 
         foreach ($lista as $aluno) {
