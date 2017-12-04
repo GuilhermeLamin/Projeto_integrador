@@ -49,31 +49,62 @@ function buscaDisciplinas($codigo){
 
 function listaOfertas($ano, $turma){
 
-              $ofetas = array();
+  $ofetas = array();
 
-              $dados = file("dados/ofertas.csv");
-              
-          
-                   foreach ($dados as $posicao => $linha) {
-
-                         if( $posicao != 0) {
-                           
-                             $colunas = explode(",", $linha);
-                                 
-                               
-                                             $oferta = array();
-                                             $oferta['ano'] = $colunas[0];
-                                             $oferta['turma'] = $colunas[1];
-                                             $oferta['cod_disciplina'] = $colunas[2];
-                                             $oferta['cod_professor'] = $colunas[3];
+  $dados = file("dados/ofertas.csv");
 
 
-                       
-                                $ofertas[] = $oferta;
-                                  
+  foreach ($dados as $posicao => $linha) {
 
-                          }
-                      }       
+    if( $posicao != 0) {
 
-                        return $ofertas;
+      $colunas = explode(",", $linha);
+
+      if($colunas[1] == $turma){                                 
+        $oferta = array();
+        $oferta['ano'] = $colunas[0];
+        $oferta['turma'] = $colunas[1];
+        $oferta['cod_disciplina'] = $colunas[2];
+        $oferta['cod_professor'] = $colunas[3];
+
+
+
+        $ofertas[] = $oferta;
+      }
+    }
+  }
+       
+  return $ofertas;
 }
+
+
+function listaOfertasProfessor($siape){
+  $ofetas = array();
+
+  $dados = file("dados/ofertas.csv");
+
+
+  foreach ($dados as $posicao => $linha) {
+
+    if( $posicao != 0) {
+
+      $colunas = explode(",", $linha);
+
+      if($colunas[3] == $siape){                                 
+        $oferta = array();
+        $oferta['ano'] = $colunas[0];
+        $oferta['turma'] = $colunas[1];
+        $oferta['cod_disciplina'] = $colunas[2];
+        $oferta['cod_professor'] = $colunas[3];
+
+
+
+        $ofertas[] = $oferta;
+      }
+    }
+  }
+       
+  return $ofertas;
+
+}
+

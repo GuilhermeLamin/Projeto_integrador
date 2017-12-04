@@ -1,7 +1,11 @@
 <?php
+	
+
+if(isset($_SESSION['login'])){
+
 	print_r($_POST);
 
-	print_r($_FILES);
+    print_r($_FILES);
 
   $origem = $_FILES['foto']['tmp_name'];
 
@@ -28,7 +32,12 @@
 	
 	fclose($arquivo);
 
-echo('<meta http-equiv="refresh"content=0;url=listaProfessores.php>');
+echo('<meta http-equiv="refresh"content=3;url=listaProfessores.php>');
+
+}else{
+  echo("Acesso negado");
+  echo('<meta http-equiv="refresh"content=3;url=listaProfessores.php>');
+}
 
 
 ?>

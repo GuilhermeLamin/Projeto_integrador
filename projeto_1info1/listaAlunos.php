@@ -2,13 +2,23 @@
 
      include("cabecalho.php");
      include("alunos.php");
-
+     
 ?>
-  <!-- conteudo principal -->
-  <article class="coluna80">
-    <section class="lista">
-      <h2>1INFO1</h2>
-    <ul>
+  
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/tab.js"></script>
+    <article class="coluna80">
+
+
+        <a class="tab " id="tab1">1INFO1</a>
+        <a class="tab" id="tab2">1INFO2</a>
+        <a class="tab" id="tab3">1INFO3</a>
+
+        
+        <ul class="conteudos todos escondidos">
+        <section class= "aluno">        
+        <ul class="conteudo tab1" id="cont1"> 
+
 <?php
 
 
@@ -30,10 +40,12 @@
   </section>
 
 
-<section class="lista">
-      <h2>1INFO2</h2>
+<section class="aluno">
+      
+      <ul class="conteudo escondido tab2" id="cont2">
     <ul>
 <?php
+
 
 
         $lista = listaAlunosTurma('1info2');
@@ -43,7 +55,7 @@
     	
 ?>
 
-   	      <li><a href="detalhaAluno.php?cod=<?=$aluno['matricula'] ?>" ><?=$aluno['nome'] ?> </a></li>
+   	      <li><a href="detalhaAluno.php?cod=<?=$aluno['matricula'] ?>" ><?=$aluno['nome'] ?></a></li>
 
 
 <?php
@@ -52,9 +64,8 @@
 
     </ul>
   </section>
-  <section class="lista">
-      <h2>1INFO3</h2>
-    <ul>
+      <section class="aluno">   
+      <ul class="conteudo escondido tab3" id="cont3">
 <?php
 
 
@@ -65,7 +76,7 @@
     	
 ?>
 
-   	      <li><a href="detalhaAluno.php?cod=<?=$aluno['matricula'] ?>" ><?=$aluno['nome'] ?> </a></li>
+   	      <li><a href="detalhaAluno.php?cod=<?=$aluno['matricula'] ?>" ><?=$aluno['nome'] ?></a></li>
 
 
 <?php
@@ -73,6 +84,7 @@
 ?>
 
     </ul>
+
   </section>
 
 
