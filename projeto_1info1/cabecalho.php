@@ -8,14 +8,14 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="css/completo.css">
 	<script type="text/javascript" src="js/script.js"></script>
 
-	<title>Todos professores</title>
+	<title>Agenda IFC</title>
 	<meta charset="utf-8">
 </head>
 <body>
 	<!-- cabeçalho -->
 	<header>
 		<img src="imagens/ifc.png" id="logo"/>
-		<h1 id="nome_site">Instituto Federal Catarinense</h1>
+		<h1 id="nome_site">Agenda de tarefas IFC</h1>
 		<div id="perfil">
 <?php
 	//isset()- verifica se uma variavel esta definida
@@ -35,16 +35,15 @@ if (isset($_SESSION['login'])) {
 	<a  class="entrar">Clique aqui para efetuar o login</a>
 
 		<form method="post" action="login.php" id="formEntrar" class="escondido">
-				<label for="login">Login</label>
+				<label for="login" class="texto_label">Login</label>
 				<input type="text" name="login" class="login1">
 <br>
-				<label for="senha">Senha</label>
+				<label for="senha" class="texto_label">Senha</label>
 				<input type="password" name="senha" class="senha1">
 <br>
 				<input type="submit" name="enviar" class="enviar">
 		</form>
 	<!--Formulario de login-->
-
 <?php
 }
 ?>

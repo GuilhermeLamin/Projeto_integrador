@@ -1,8 +1,6 @@
 
-
 <script type="text/javascript" src="js/jquery.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/completo.css">
-  <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/tab.js"></script>
 
 <?php
 
@@ -33,7 +31,7 @@
 //isset - is set - está definida?
 if(isset($_SESSION['login'])){
 ?>  
-   <a href="formProfessor.php">Inserir professor</a>
+   <a href="formProfessor.php" class="espaço_inserir">Inserir professor</a>
 <?php
 }
 ?>

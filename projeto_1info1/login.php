@@ -10,7 +10,7 @@
 
 
    if ($login == 'admin' and $senha == 'admin') {
-   	   echo("Olá, administrador!");
+           echo("Bem vindo, Administrador!");
 
        $_SESSION['nome'] = "Administrador";
        $_SESSION['login'] = "admin";

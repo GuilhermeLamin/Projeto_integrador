@@ -22,8 +22,7 @@
          </section>
     </section>
          
-
-    <section>
+    <section class="fonte_detalha">
       <p>Nome: <?=$professor['nome']?></p>
       <p>Email: <?=$professor['email']?></p>
       <p>Disciplina: Not found</p>
