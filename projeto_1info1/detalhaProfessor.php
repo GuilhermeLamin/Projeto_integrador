@@ -18,17 +18,12 @@
   <article class="coluna80">
     <section class="foto">
        <section class="pequenas">
-      <img src="<?=$professor['foto']?>" class="clicavel" id="sem">
+      <img src="<?=$professor['foto']?>" class="foto_professor">
          </section>
     </section>
-         <section class="modal img1 escondidos">
+         
 
-
-
-        <section class="dados">
-        <section class="clique-info"><h3>Mostrar informações</h3></section>
-
-    <section class="escondido info-professor">
+    <section>
       <p>Nome: <?=$professor['nome']?></p>
       <p>Email: <?=$professor['email']?></p>
       <p>Disciplina: Not found</p>

@@ -21,6 +21,6 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$(".entrar").click(function(){
-		$("#formEntrar").toggleClass("escondido");
+		$("#formEntrar").slideToggle("escondido");
 	})
 })
